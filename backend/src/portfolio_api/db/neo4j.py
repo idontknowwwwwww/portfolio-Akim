@@ -1,5 +1,7 @@
 """Connexion Neo4j via le driver officiel."""
 
+from __future__ import annotations
+
 import os
 import certifi
 
@@ -7,7 +9,7 @@ os.environ.setdefault("SSL_CERT_FILE", certifi.where())
 
 from neo4j import AsyncGraphDatabase, AsyncDriver
 
-from __future__ import annotations
+
 
 
 
